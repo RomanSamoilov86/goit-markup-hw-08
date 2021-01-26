@@ -1,0 +1,44 @@
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: #f5f4fa;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.section-title {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 2;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.text-desk-work {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.58;
+  color: var(--primary-bg-color);
+  padding: 63px 24px;
+  background: rgba(33, 150, 243, 0.9);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: 250ms;
+  transform: translateY(100%);
+}
+
+.link-desk:hover .text-desk-work,
+.link-desk:focus .text-desk-work {
+  opacity: 1;
+  transform: translateY(0%);
+}

@@ -1,0 +1,76 @@
+.container-nav {
+  display: flex;
+  align-items: center;
+}
+.site-nav {
+  display: flex;
+}
+
+.link-nav {
+  margin-right: 50px;
+}
+
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.link-auth {
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-nav {
+  border-bottom: 1px solid #ececec;
+}
+.site-nav .link {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition: color 205ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-nav .link.current {
+  color: var(--accent-text-color);
+  text-decoration: none;
+  transition: color 205ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.auth-nav a {
+  text-decoration: none;
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-text-color);
+}
+
+.auth-nav-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    color: var(--accent-text-color);
+  }
+}
+
+.auth-nav-link:focus .icon-mail,
+.auth-nav-link:hover .icon-mail {
+  fill: var(--accent-text-color);
+}
+.auth-nav-link:focus .icon-phone,
+.auth-nav-link:hover .icon-phone {
+  fill: var(--accent-text-color);
+}

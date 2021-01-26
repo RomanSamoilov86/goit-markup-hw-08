@@ -1,0 +1,27 @@
+.icon-mail {
+  width: 16px;
+  height: 12px;
+  fill: #757575;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-phone {
+  width: 10px;
+  height: 16px;
+  fill: #757575;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-auth:hover .icon-phone,
+.link-auth:focus .icon-phone {
+  fill: var(--accent-text-color);
+}
+
+.link-auth:hover .icon-mail,
+.link-auth:focus .icon-mail {
+  fill: var(--accent-text-color);
+}
