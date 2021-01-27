@@ -3,10 +3,21 @@
 /* цвет текста                 #757575*/
 /* основной цвет фона          #FFFFFF */
 /* цвет фона нашей команды     #F5F4FA */
+
 .container {
-  width: 1200px;
+  width: 100%;
   padding: 0px 15px;
   margin: 0 auto;
+
+  @include for-size(mobile) {
+    width: 480px;
+  }
+  @include for-size(tablet) {
+    width: 768px;
+  }
+  @include for-size(desctop) {
+    width: 1280px;
+  }
 }
 
 img {
@@ -47,4 +58,8 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+* {
+  outline: 2px solid red;
 }

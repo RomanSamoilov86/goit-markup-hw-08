@@ -5,9 +5,27 @@
 /* основной цвет фона          #FFFFFF */
 /* цвет фона нашей команды     #F5F4FA */
 .container {
-  width: 1200px;
+  width: 100%;
   padding: 0px 15px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
 }
 
 img {
@@ -51,6 +69,10 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+* {
+  outline: 2px solid red;
 }
 
 .visually-hidden {
@@ -342,8 +364,6 @@ button:focus {
 }
 
 .about {
-  display: flex;
-  justify-content: space-evenly;
   margin-left: -30px;
 }
 
@@ -408,12 +428,6 @@ button:focus {
   flex-basis: calc(100% / 4 - 30px);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-
-.list-name {
-  padding: 0px;
-  margin-left: -30px;
-  display: flex;
 }
 
 .section-job {
@@ -606,8 +620,6 @@ button:focus {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: #f5f4fa;
-  max-width: 1600px;
-  margin: 0 auto;
 }
 
 .section-title {
@@ -645,6 +657,11 @@ button:focus {
 .link-desk:focus .text-desk-work {
   opacity: 1;
   transform: translateY(0%);
+}
+
+.list-name {
+  padding: 0px;
+  margin-left: -30px;
 }
 
 .footer {
