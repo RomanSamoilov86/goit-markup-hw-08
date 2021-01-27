@@ -1,19 +1,17 @@
-@import './utils/variables';
-@import './utils/visually-hidden';
-@import './base/container';
+@import 'utils/variables';
+@import 'utils/mixin';
 
-@import './components/header';
-@import './components/logo';
-@import './components/navigation';
+@import 'base/common';
+@import 'base/container';
 
-@import './components/icon';
-@import './components/hero';
-@import './components/button';
-@import './components/about';
-@import './components/job';
-@import './components/section-logo';
-@import './components/portfolio';
-@import './components/team';
-@import './components/footer';
-@import './components/modal-footer';
-@import './components/modal';
+@import 'components/logo';
+@import 'components/titles';
+@import 'components/header';
+@import 'components/buttons';
+@import 'components/feacherList';
+@import 'components/WhatWeDoSection';
+@import 'components/teamSection';
+@import 'components/portfolioSection';
+@import 'components/clientLogoSection';
+@import 'components/footer';
+@import 'components/modal';

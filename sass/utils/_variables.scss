@@ -1,65 +1,36 @@
 /* цвет акцент                 #2196F3 */
 /* основной цвет заголовков    #212121 */
-/* цвет текста                 #757575*/
+/* цвет текста                 #757575 */
 /* основной цвет фона          #FFFFFF */
 /* цвет фона нашей команды     #F5F4FA */
 
-.container {
-  width: 100%;
-  padding: 0px 15px;
-  margin: 0 auto;
+$primaryTextColor: #757575;
+$accentColor: #2196f3;
+$titleTextColor: #212121;
+$heroTextColor: #ffffff;
+$bgdButtonColor: #f5f4fa;
 
-  @include for-size(mobile) {
-    width: 480px;
-  }
-  @include for-size(tablet) {
-    width: 768px;
-  }
-  @include for-size(desctop) {
-    width: 1280px;
-  }
-}
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+/* =====Texts===== */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0px;
+.section p {
+  margin-top: 0;
 }
-
-ul,
-ol {
-  margin: 0px;
-  padding: 0px;
-}
-:root {
-  --title-text-color: #757575;
-  --primary-text-color: #212121;
-  --accent-text-color: #2196f3;
-  --primary-bg-color: #ffffff;
-}
-ul {
-  list-style: none;
-}
-.text {
-  line-height: 1.71;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
+.section-text {
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
+  margin-bottom: 0;
 }
-
-* {
-  outline: 2px solid red;
+.section-team-text {
+  font-size: 16px;
+  line-height: 1.18;
+}
+.section-portfolio-text {
+  font-size: 16px;
+  line-height: 1.86;
+  margin-bottom: 0;
+  color: $primaryTextColor;
 }
