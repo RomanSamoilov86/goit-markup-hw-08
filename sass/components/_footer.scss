@@ -145,8 +145,9 @@
   display: flex;
   flex-direction: column;
   margin-right: 12px;
+  align-items: flex-start;
 
-  align-items: center;
+  // align-items: center;
 }
 .form-label {
   font-family: Roboto, sans-serif;
@@ -156,12 +157,14 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $heroTextColor;
+  text-align: initial;
 
   margin-bottom: 20px;
   // @media screen and(min-width:$desktop) {
 
   // }
 }
+
 .form-input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
